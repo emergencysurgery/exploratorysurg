@@ -1,0 +1,592 @@
+
+body {
+    background-color:#e9ebee;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 100%;
+    background-color: #36C5F0;
+    background-image: linear-gradient(rgb(115, 196, 221), #36C5F0 23%);
+    height: 80px;
+    z-index: 5;
+    border-bottom: 1px solid rgb(49, 183, 224);
+}
+
+
+.login-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    float: left;    
+    margin: 15px;
+    margin-left: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+
+.submission-form {
+    float: right;
+    right: 14vw;
+    position: relative;
+    top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+    z-index: 1;
+}
+
+
+.signin-text {
+    margin-right: 130px;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: white;
+}
+
+.pass-text {
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.logo-box {
+    float: left;
+    text-transform: lowercase
+}
+
+.action-button {
+    margin-left: 10px;
+    margin-right: 15px;
+    width: 50px;
+    height: 23px;
+    line-height: 0px;
+    background-color: #4A154B;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10%;
+    text-transform: capitalize; 
+}
+
+.action-button:hover {
+    cursor: pointer;
+    background-color: #ECB22E;
+}
+
+.signin-inputs-cont input[type="submit"] {
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.signin-inputs-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-input-box {
+    margin: 10px 10px;
+    margin-bottom: 5px;
+    height: 20px;
+    width: 150px;
+    border: 1px solid black;
+    
+}
+
+.signin-input-box:hover {
+    cursor: text;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.outline {
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.demo {
+    position: fixed;
+    bottom: 1vw;
+    right: 23.6vw;
+    z-index: 2;
+}
+
+.logout{
+    float: right;
+    width: 60px;
+    right: 50px;
+    margin-bottom: 9px;
+    background-color: #ECB22E;
+}
+
+.logout:hover {
+    background-color: rgb(150, 140, 140);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.errors {
+    position: absolute;
+    top: 20px;
+    left: -128px;
+    height: 35px;
+    width: 125px;
+    background-color: rgb(201, 23, 23);
+    color: white;
+    font-size: 12px;
+    font-family: monospace;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 15px;
+    border: 2px solid rgb(153, 18, 18);
+}
+
+.errors:after {
+  content: " ";
+  position: absolute;
+  right: -10px;
+  top: 8px;
+  border-top: 10px solid transparent;
+  border-right: none;
+  border-left: 10px solid rgb(153, 18, 18);
+  border-bottom: 10px solid transparent;
+  z-index: -1;
+}
+
+.errors > p {
+    margin-top: 2px;
+}
+
+.logged-in-bar {
+    height: 100%;
+}
+
+.nav-flex {
+    height: 100%;
+}
+
+.left-logged-in {
+    position: relative;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.search-bar {
+    position: relative;
+    top: -33px;
+    left: 332px;
+    width: 360px;
+    height: 17px;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 3px 3px 3px 9px;
+    border: .5px solid black;
+}
+
+.search-bar::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    letter-spacing: 1px;
+    text-align: start;
+    font-size: 14px; 
+}
+
+.logo-logged-in {
+    position: relative;
+    left: 289px;
+    top: -5px;
+    height: 35px;
+    width: 35px;
+    border-radius: 8%;
+    background-color: white;
+    text-transform: lowercase;
+}
+
+.logo-logged-in:hover {
+    box-shadow: -2px 2px rgb(37, 142, 173);
+}
+
+
+.the-p {
+    position: relative;
+    bottom: 8px;
+    font-size: 40px;
+    color: rgba(47, 182, 223, 0.904);
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+}
+
+.logo-logged-in:hover .the-p {
+    color: rgb(37, 142, 173);
+}
+
+
+.fa-search {
+    position: absolute;
+    top: 7px;
+    left: 676px;
+    width: 30px;
+    color: gray;
+}
+
+.fa-search::before {
+    height: 30px;
+    width: 32px;
+    text-align: center;
+}
+
+.fa-search:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.fa {
+    display: block;
+}
+
+.right-logged-in {
+    position: relative;
+    top: -54px;
+    right: -870px;
+    width: 40%;
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+
+.info-blip {
+    height: 100%;
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    border-right: 1px solid gray;
+    padding: 0 28px 0 0;
+    align-items: flex-end;
+}
+
+.info-blip-a {
+    padding: 3px 0 7px 2px;
+}
+
+.info-blip-a:hover {
+    background-color: rgb(150, 140, 140);
+    border-radius: 5px;
+}
+
+.info-blip p {
+    display: inline-block;
+    margin-bottom: 6px;
+    padding-left: 5px;
+    text-transform: capitalize;
+}
+
+.profile-photo {
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: .5px;
+    margin-bottom: 8px;
+    padding: 13px 34px 5px 0; 
+    border-right: 1px solid gray;
+}
+
+.home:hover {
+    color: black;
+}
+
+.icons-cont {
+    position: relative;
+    height: 64%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-right: 1px solid gray;
+    padding-right: 47px;
+    margin-bottom: 8px;
+    padding-bottom: 3px
+}
+
+.icons-cont * {
+    font-size: 22px;
+    color: rgb(58, 56, 56);
+    margin: 0 11px;
+}
+
+.icons-cont i:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.fa-user-friends:hover {
+    color: rgb(0, 0, 0);
+}
+
+.request-wrapper {
+    position: absolute;
+    top: 44px;
+    right: 113px;
+    min-height: max-content;
+    width: 371px;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+.request-wrapper:after {
+  content: " ";
+  position: absolute;
+  right: 30px;
+  top: -15px;
+  border-top: none;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid white;
+}
+
+#reqs {
+    font-size: 18px;
+    border-bottom: 1px solid gray;
+    padding: 5px 0px 5px 0px;
+    margin: 0 0 0 0px;
+    width: 100%;
+    text-indent: 9px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.request-wrapper ul {
+    margin: 0;
+}
+
+.request-wrapper h4 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    padding-top: 9px;
+    text-indent: 10px;
+}
+
+.msg-wrapper {
+    position: absolute;
+    top: 43px;
+    right: 64px;
+    height: 60px;
+    width: 371px;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0px;
+}
+
+#note-box {
+    margin: 0px;
+}
+
+.msg-wrapper h4 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    padding-top: 9px;
+    text-indent: 10px;
+}
+
+.msg-wrapper:after {
+  content: " ";
+  position: absolute;
+  right: 30px;
+  top: -15px;
+  border-top: none;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid white;
+}
+
+#msgs {
+    font-size: 18px;
+    border-bottom: 1px solid gray;
+    padding: 5px 0px 5px 0px;
+    margin: 0 0 0 0px;
+    width: 100%;
+    text-indent: 9px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.note-wrapper {
+    position: absolute;
+    top: 43px;
+    right: 23px;
+    height: 60px;
+    width: 371px;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0px;
+}
+
+#note-box {
+    margin: 0;
+}
+
+.note-wrapper h4 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    padding-top: 9px;
+    text-indent: 10px;
+}
+
+.note-wrapper:after {
+  content: " ";
+  position: absolute;
+  right: 30px;
+  top: -15px;
+  border-top: none;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid white;
+}
+
+#notes {
+    font-size: 18px;
+    border-bottom: 1px solid gray;
+    padding: 5px 0px 5px 0px;
+    margin: 0 0 0 0px;
+    width: 100%;
+    text-indent: 9px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.nav-frnd-req-item {
+    padding: 5px 0;
+}
+
+.nav-frnd-req-item  * {
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+
+.nav-req {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-req-user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-friend-names {
+    display: flex;
+}
+
+.nav-req-btns {
+    display: flex;
+}
+
+.req-btn {
+    border-radius: 3px;
+    font-weight: 700;
+    text-align: center;
+    height: 25px;
+    letter-spacing: .04em;
+    padding: 4px;
+    cursor: pointer
+
+}
+
+.nav-btn {
+    color: white;
+    background-color: #36C5F0;
+    border: 1px solid rgb(48, 181, 221);
+    outline: none;
+    &:hover {
+        background-color: rgb(48, 173, 211);
+    }
+}
+
+.nav-remove-btn {
+    width: 47px;
+    background-color: #f5f6f7;
+    border-color: #ccd0d5;
+    color: #4b3f56;
+    margin-left: 5px;
+    &:hover {
+        background-color: #eceaea;
+    }
+}
+
+.req-fname {
+    margin-left: 10px;
+    letter-spacing: .03em;
+    color: #385898;
+}
+
+.req-lname {
+    margin-left: 3px;
+    letter-spacing: .03em;
+    color: #385898;
+}
+
+.friend-notifs {
+    position: absolute;
+    top: 1px;
+    left: 15px;
+    max-width: min-content;
+    height: 1em;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 3px 5px 1px 4px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    border-radius: 2px;
+    text-align: center;
+}

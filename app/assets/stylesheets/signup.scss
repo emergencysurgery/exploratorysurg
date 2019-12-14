@@ -1,0 +1,367 @@
+input::-webkit-calendar-picker-indicator{
+    display: none;
+}
+
+input[type="date"]::-webkit-input-placeholder{ 
+    visibility: hidden !important;
+}
+
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+::-webkit-input-placeholder {
+  
+  font-size: 18px;
+}
+
+.signup-max {
+    background-image: image_url('patio_photo.jpg') ;
+    background-repeat: no-repeat;
+    background-position: 70% 0;
+    background-size: cover;
+}
+
+.tagline {
+    font-family: 'Alegreya Sans SC', sans-serif;    color: white;
+    letter-spacing: 1px;
+    font-size: 23px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 0;
+    box-sizing: border-box;
+    width: 50%;
+   
+}
+
+.left-side > h2 {
+    font-size: 50px;
+    position: absolute;
+    top: 40px;
+    left: 135px;
+    color: white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.left-side > h3 {
+    position: relative;
+    top: 100px;
+    margin-left: 155px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+strong {
+    font-weight: 900;
+    font-size: 24px;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.hook {
+    color: white;
+    font-size: 23px;
+}
+.signup-max {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100vw;
+    height: 93%;
+}
+
+.signup-info {
+    position: relative;
+    right: 70px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup-info > h2 {
+    font-size: 42px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+
+
+.signup-info  * {
+    margin: 10px;
+    
+}
+
+.signup-info form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.pw-input-box {
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.email-input-box {
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.fn-input-box {
+    width: 183px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.ln-input-box {
+    width: 184px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.bday-box {
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.bday-text {
+    font-size: 24px;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.bday-text > h4 {
+   margin-left: 55px;
+   margin-bottom: 0;
+}
+
+.signup-info h2 {
+    font-size: 42px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.signup-info > p {
+    font-size: 24px;
+    color: white;
+}
+
+.gender-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gender-buttons > h4 {
+    font-size: 28px;
+    color: white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 1px;
+}
+.gender-buttons > p {
+    font-size: 20px;
+    color: white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 1px;
+}
+
+input[type="radio"] {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
+    color: black;
+}
+
+.signup-max input[type="text"], input[type="password"], input[type="email"]  {
+    font-size:25px;
+    padding-left: 10px;
+}
+
+
+ input[type='radio']:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: 1px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: 1px;
+    left: -1px;
+    position: relative;
+    background-color: black;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.signup-max input[type="date"] {
+    font-size:20px;
+    margin-left: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+
+}
+
+input[type=date]::-webkit-datetime-edit {
+    color: rgb(88, 88, 88);
+    margin-left: 15px;
+    letter-spacing: 2px;
+    font-family: sans-serif
+}
+
+.sign-up-button {
+    width: 180px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: #4A154B;
+    font-size: 22px;
+    letter-spacing: 1px;
+    border: 1px solid black;   
+    color: white;
+}
+
+.sign-up-button:hover {
+    cursor: pointer;
+    background-color: #ECB22E;
+}
+
+.sign-up-button {
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+    margin-right: 15px;
+}
+
+.signup-errors {
+    width: 155px;
+    height: 40px;
+    background-color: rgb(179, 0, 0);
+    font-family: monospace;
+    border-radius: 3px;
+    border: 2px solid rgb(114, 18, 18);
+    color: white;
+
+}
+
+.signup-errors-left {
+    width: 155px;
+    height: 40px;
+    background-color: rgb(179, 0, 0);
+    font-family: monospace;
+    border-radius: 3px;
+    border: 2px solid rgb(153, 18, 18);
+    color: white;
+
+}
+
+
+.signup-errors-left:after {
+  content: " ";
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid rgb(114, 18, 18);
+  border-left: none;
+  border-bottom: 10px solid transparent;
+  z-index: -1;
+  
+}
+
+.lname {
+    position: fixed;
+    top: 31.2%;
+    right: 3%;
+}
+
+
+.signup-errors:after {
+  content: " ";
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  border-top: 10px solid transparent;
+  border-right: none;
+  border-left: 10px solid rgb(114, 18, 18);
+  border-bottom: 10px solid transparent;
+  z-index: -1;
+  
+}
+
+.names{
+    position: fixed;
+    top: 31.6%;
+    right: 44.1%;
+}
+
+.Email {
+    position: fixed;
+    top: 41.9%;
+    right: 44.1%;
+}
+
+.p-word {
+    position: fixed;
+    top: 50.4%;
+    right: 44.1%;
+    height: 50px;
+}
+
+.Sex {
+    position: fixed;
+    top: 75.8%;
+    right: 42.6%;
+}
+
+.signup-info p {
+    margin-top: 6px;
+}
+
+.p-word p {
+    margin: 5px 3px;
+}
+

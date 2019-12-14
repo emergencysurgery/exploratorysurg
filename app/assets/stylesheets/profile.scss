@@ -1,0 +1,321 @@
+.prof-info-main {
+    height: min-content;
+    min-width: 255px;
+    margin: 25px 15px 0 285px;
+    display: inline-block;
+    font-family: 'Fira Sans', sans-serif;
+    border-radius: 20px;
+    background-color: rgb(248, 242, 242);
+    padding: 0 7px 0 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+}
+
+.profile-main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 46px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.prof-info-header {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.prof-info-header h3 {
+    font-size: 24px;
+    padding-top: 5px;
+}
+
+.fa-globe-americas {
+    font-size: 32px;
+    padding: 0 20px ; 
+}
+
+.bio-basic {
+    opacity: .5;
+    font-size: 12px
+}
+
+.about-me-bio h3 {
+    padding: 20px 0 15px 0;
+}
+
+.about-me-bio  {
+    text-align: center;
+    padding-bottom: 10px; 
+}
+
+.add-bio {
+    color: blue;
+    font-size: 14px;
+    padding-top: 7px; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.add-bio:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.location {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.work {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.education {
+    display: flex;
+}
+
+.loc-work-ed {
+    margin: 25px 0 0 15px;
+    font-size: 14px;
+}
+
+.fa-home {
+    padding-right: 10px;
+}
+
+.fa-briefcase {
+    padding-right: 11px;
+
+}
+
+.fa-graduation-cap {
+    padding-right: 7px;
+}
+
+.prof-header-main {
+    position: relative;
+    margin: -4px1 0 0 283px;
+    width: 845px;
+    height: 370px;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+
+
+}
+
+.prof-under {
+    display: flex;
+
+}
+
+.cover-photo-img {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 102.5%;
+    height: 370px;
+    left: 7px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    border-radius: 4px;
+}
+
+.prof-photo-profile {
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    border: 5px white solid;
+    left: -313px;
+    bottom: -201px;
+    display: inline-block
+}
+
+.prof-name {
+    position: relative;
+    color: white;
+    font-size: 28px;
+    left: -135px;
+    bottom: -138px;
+    text-transform: capitalize;
+    margin-left: 68px;
+}
+
+.friends h3 {
+    font-size: 18px;
+    margin: 45px 0 15px 13px;
+}
+
+.edit-prof-btn {
+    position: relative;
+    font-size: 14px;
+    outline: none;
+    padding: 7px 15px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 3px;
+    right: -304px;
+    bottom: -107px;
+    letter-spacing: .5px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.prof-photo-update {
+    position: relative;
+    color: white;
+    left: 80px;
+    bottom: -99px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 33px;
+    width: 62px;
+    padding: 2px 0px;
+    border-radius: 17px;
+    opacity: 0;
+}
+
+.outer-cover {
+    position: relative;
+    color: white;
+    left: 21px;
+    bottom: 271px;
+    display: flex;
+    justify-content: space-around;
+    height: 19px;
+    width: 206px;
+    cursor: pointer;
+}
+
+.outer-cover:hover .cover {
+    font-size: 14px;
+    transition-delay: 100ms;
+    color: white;
+}
+
+.outer-cover:hover .cover-photo-update {
+    opacity: .8;
+    transition-delay: 100ms
+}
+
+.cover-photo-update { 
+    height: 19px;
+    width: 206px;
+    background-color: black;
+    opacity: 0;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+
+
+.cover {
+    margin-right: -26px;
+    margin-top: 8px;
+    font-size: 18px;
+    opacity: .9;
+    color: rgb(228, 228, 228);
+    z-index: 3;
+    cursor: pointer;
+}
+
+
+
+.prof-photo-update:hover {
+    opacity: .8;
+}
+
+
+
+.prof-upload-input {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.prof-up-label {
+    display: flex;
+}
+
+.prof-label span {
+    cursor: pointer;
+}
+
+#cover-camera {
+    cursor: pointer;
+    color: rgb(104, 104, 104);
+}
+
+.fa-camera {
+    cursor: pointer;
+}
+
+.friend-square {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 4px;
+}
+
+
+.friends-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 29px;
+  grid-auto-rows: 100px;
+  margin: .7em 0 0 .8em;
+  grid-template-rows: min-content 1fr;
+}
+
+.friends-list-name {
+    padding-bottom: 10px;
+    word-break: break-all;
+    color: rgb(47, 47, 241);
+    text-transform: capitalize;
+    font-size: 13px;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.friend {
+    width: 100%;
+    height: 100%;
+}
+
+.friends {
+    width: 100%;
+    height: 100%;
+}
+
+.friend-btn {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid;
+    font-size: 14px;
+    letter-spacing: .5px;
+    &:hover{
+        cursor: pointer;
+    }
+    background-color: #f5f6f7;
+    text-align: center;
+    text-shadow: none;
+    vertical-align: middle;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+    outline: none;
+}
+
+.friend-btn-cont {
+    display: inline-block;
+    position: relative;
+    bottom: -111px;
+    right: -293px;
+}
+
+#not-friends {
+    display: none;
+}

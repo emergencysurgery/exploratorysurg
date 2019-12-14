@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/205b2f2ec2.js" crossorigin="anonymous" ></script>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+    <% if logged_in? %>
+        <script type="text/javascript">
+            window.currentUser = <%= render(
+                "api/users/user.json.jbuilder",
+                user: current_user
+            ).html_safe %>
+        </script>
+    <% end %>
+</head>
+
+<body>
+   
+    <main id="root">
+        <marquee style="font-size: 80px;">Kevin did this</marquee>
+    </main>
+    
+</body>
+
+</html>
+
+
+
