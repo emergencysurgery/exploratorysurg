@@ -28,7 +28,7 @@ gem 'autoprefixer-rails'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 gem 'aws-sdk-s3'
-gem "font-awesome-rails"
+gem "font-awesome-rails", require: false
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 # Reduces boot times through caching; required in config/boot.rb
